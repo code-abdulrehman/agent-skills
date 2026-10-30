@@ -1,0 +1,40 @@
+version = 1
+
+[project]
+name = "replace-with-project-name"
+main_checkout = "/absolute/path/to/project"
+remote = "origin"
+base_branch = "main"
+branch_prefix = "codex/"
+communication_language = "English"
+
+[coordination]
+mode = "independent_codex_tasks"
+hub_role = "main-maintainer"
+allow_subagents = false
+
+[maintainer]
+id = "main-maintainer"
+role_file = ".codex/roles/main-maintainer.md"
+session_title = "replace-with-project-name - main-maintainer"
+worktree = "/absolute/path/to/project"
+owned_paths = [".github/**", "docs/**", ".codex/**"]
+forbidden_paths = ["replace-with-specialist-owned-path/**"]
+verify = ["git diff --check"]
+deploy_verify = []
+
+[[specialists]]
+id = "component-owner"
+role_file = ".codex/roles/component-owner.md"
+session_title = "replace-with-project-name - component-owner"
+purpose = "Replace with a stable component or product responsibility."
+worktree = "/absolute/path/to/project-component"
+home_branch = "codex/component-owner-home"
+owned_paths = ["replace-with-owned-path/**"]
+forbidden_paths = [".github/**"]
+verify = ["replace-with-component-test-command", "git diff --check"]
+user_visible_verify = []
+depends_on = []
+
+[shared_paths]
+"replace-with-shared-path/**" = "component-owner"

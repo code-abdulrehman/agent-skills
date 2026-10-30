@@ -1,0 +1,133 @@
+{
+  "discovered_occurrences": 10976,
+  "skill_occurrences": 10394,
+  "command_occurrences": 565,
+  "agent_occurrences": 17,
+  "unique_packages": 1955,
+  "duplicate_occurrences": 9021,
+  "public_skills": 534,
+  "excluded_packages": 1423,
+  "discovered_by_ecosystem": {
+    "application-bundled": 47,
+    "shared": 9075,
+    "claude-code": 123,
+    "codex": 1569,
+    "cursor": 95,
+    "gemini": 60,
+    "opencode": 4,
+    "harness": 2,
+    "openclaw": 1
+  },
+  "public_by_ecosystem": {
+    "application-bundled": 1,
+    "codex": 95,
+    "shared": 313,
+    "claude-code": 31,
+    "cursor": 56,
+    "gemini": 35,
+    "opencode": 2,
+    "harness": 1
+  },
+  "files_inspected": 18329,
+  "files_sanitized": 2550,
+  "public_files_sanitized": 383,
+  "sensitive_references_sanitized": 759,
+  "sanitization_categories": {
+    "dynamic-project-guidance": 61,
+    "embedded-url-auth": 59,
+    "image-metadata-stripped": 121,
+    "private-ip": 130,
+    "document-author-metadata": 2,
+    "internal-domain": 40,
+    "project-specific-reference": 159,
+    "local-filesystem-path": 216,
+    "github-token": 2,
+    "personal-email": 1,
+    "personal-account": 4,
+    "personal-name": 1,
+    "documentation-network-portability-fix": 18,
+    "github-runtime-identity-discovery": 1,
+    "contextual-credential-literal": 22,
+    "environment-example-credential-value": 2,
+    "relative-reference-portability-fix": 15091
+  },
+  "public_syntax_checks": {
+    "python:passed": 222,
+    "yaml:passed": 745,
+    "json:passed": 33,
+    "shell:passed": 31,
+    "javascript:passed": 20,
+    "xml:passed": 96,
+    "toml:passed": 3
+  },
+  "readiness": "Ready with documented limitations",
+  "references_modified_total": 15930,
+  "distinct_installable_identities": 478,
+  "excluded_unresolved_license": 1280,
+  "excluded_other_review": 143,
+  "public_files": 3647,
+  "installer_validation": {
+    "fixture_checks_passed": 7,
+    "full_install": 478,
+    "repeat_skipped_existing": 478,
+    "variants_skipped": 56,
+    "temporary_clone_cleanup_test": "passed"
+  },
+  "project_skill_adaptation": {
+    "added_variants": 11,
+    "updated_existing": 1,
+    "packages_checked": 12,
+    "files_checked": 68,
+    "unresolved_findings": 0,
+    "mocked_diagnostic_regression": "passed"
+  },
+  "inventory_packages_including_authored_adapters": 1957,
+  "collection_authored_adapters": 2,
+  "orca_adapter_validation": {
+    "fixture_checks_passed": 7,
+    "checks": [
+      "explicit-executable-selected-once",
+      "linux-avoids-screen-reader",
+      "development-runtime-selection",
+      "no-shell-evaluation-or-fallback",
+      "reference-traversal-rejected",
+      "read-only-argument-vector",
+      "failed-runtime-output-redacted"
+    ],
+    "skills": {
+      "orchestration": {
+        "frontmatter": "passed",
+        "python_syntax": "passed",
+        "runtime_guide_read": "passed",
+        "returncode": 0
+      },
+      "orca-cli": {
+        "frontmatter": "passed",
+        "python_syntax": "passed",
+        "runtime_guide_read": "passed",
+        "returncode": 0
+      }
+    },
+    "no_operational_orca_commands_executed": true
+  },
+  "final_export_checks": {
+    "files_scanned": 3650,
+    "binary_assets_previously_inspected": 191,
+    "skills_integrity_checked": 534,
+    "distinct_installable_identities": 478
+  },
+  "final_export_findings": 0,
+  "temporary_clone_validation": {
+    "temporary_local_git_clone": "passed",
+    "dry_run_no_installation": "passed",
+    "installed_independent_copies": "passed",
+    "temporary_clone_cleanup": "passed",
+    "installed_helper_works_after_cleanup": "passed",
+    "external_network_used": false
+  },
+  "license_revision": {
+    "repository_license": "MIT",
+    "local_package_variants_licensed": 13,
+    "third_party_licenses_preserved": true
+  }
+}

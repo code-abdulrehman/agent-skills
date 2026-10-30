@@ -1,0 +1,3 @@
+interface:
+  display_name: "Current Project UI"
+  short_description: "Build consistent Current Project LiveView interfaces"

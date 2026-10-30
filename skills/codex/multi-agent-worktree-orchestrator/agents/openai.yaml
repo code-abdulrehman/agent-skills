@@ -1,0 +1,4 @@
+interface:
+  display_name: "Multi-Session Worktree Orchestrator"
+  short_description: "Coordinate durable Codex tasks across fixed worktrees"
+  default_prompt: "Use $multi-agent-worktree-orchestrator to analyze this repository, recommend an independent Codex task topology, and wait for approval before creating sessions or worktrees."
